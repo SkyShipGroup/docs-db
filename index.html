@@ -1,133 +1,75 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
 
-  <head>
+<head>
 
-    <meta charset="UTF-8">
+	<meta charset="UTF-8">	<title>Темный сайт</title>
 
-    <title>Мой сайт</title>
+	<link rel="stylesheet" href="style.css">
 
-    <style>
+  <link href="path/to/prism.css" rel="stylesheet" />
 
-      * {
+  <link href="path/to/prism.css" rel="stylesheet" />
 
-        margin: 0;
+  <script src="path/to/prism.js"></script>
 
-        padding: 0;
+</head>
 
-        box-sizing: border-box;
+<body>
 
-      }
+	<header>
 
-      body {
+		<nav>
 
-        font-family: Arial, sans-serif;
+			<ul>
 
-      }
+				<li><a href="#">Главная</a></li>
 
-      /* Стили для бокового меню */
+				<li><a href="#">О нас</a></li>
 
-      .sidebar {
+				<li><a href="#">Контакты</a></li>
 
-        position: fixed; /* фиксированное положение */
+			</ul>
 
-        top: 0;
+		</nav>
 
-        left: 0;
+	</header>
 
-        height: 100%;
+	<main>
 
-        width: 200px;
+		<h1>Хотите узнать как пользоваться библиотекой?</h1>
 
-        background-color: #333;
+    <h2>Что ж, вот не большой пример использования нашей библиотеки</h2>
 
-        color: #fff;
+		<p><pre><code class="language-javascript">
 
-        padding: 20px;
+      const Create = require('./pkg/index.js');
 
-      }
+      const db = new Create('myFolder', 'db.sql');
 
-      .sidebar ul {
+      db.add({ variables: "values"});
 
-        list-style: none;
+      db.save();
 
-        margin: 0;
+      db.load();
 
-        padding: 0;
+      const dat = db.AllData();
 
-      }
+      console.log(dat); 
 
-      .sidebar li {
+    </code></pre></p>
 
-        margin-bottom: 10px;
+		<img src="database.jpeg", style="border: 3px dotted gray">
 
-      }
+	</main>
 
-      .sidebar a {
+	<footer>
 
-        color: #fff;
+		<p>&copy; Все права защещены db-albania </p>
 
-        text-decoration: none;
+	</footer>
 
-      }
-
-      /* Стили для основного содержимого */
-
-      .content {
-
-        margin-left: 200px; /* ширина бокового меню */
-
-        padding: 20px;
-
-      }
-
-      .content h1 {
-
-        font-size: 36px;
-
-        margin-bottom: 20px;
-
-      }
-
-      .content p {
-
-        font-size: 16px;
-
-        line-height: 1.5;
-
-        margin-bottom: 20px;
-
-      }
-
-    </style>
-
-  </head>
-
-  <body>
-
-    <div class="sidebar">
-
-      <ul>
-
-        <li><a href="#">Главная</a></li>
-
-        <li><a href="#">О нас</a></li>
-
-        <li><a href="#">Контакты</a></li>
-
-      </ul>
-
-    </div>
-
-    <div class="content">
-
-      <h1>Заголовок страницы</h1>
-
-      <p>Текст страницы...</p>
-
-    </div>
-
-  </body>
+</body>
 
 </html>
